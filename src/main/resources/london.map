@@ -1,0 +1,687 @@
+# -- scotland yard map file -- london.map --
+#
+# Entries are of the following form:
+#
+# node	  id	  x	  y
+# bus	  id	  id
+# taxi	  id	  id
+# ferry	  id	  id
+# subway  id	  id
+#
+# An id is a number identifying a node. All values are separated by
+# white space (space or horizontal tabs). Comment lines start with a
+# hash (#) character. Empty lines can be used to structure the map
+# file and must be skipped (like comment lines).
+
+node	1	11	97
+node	2	30	98
+node	3	41	98
+node	4	48	99
+node	5	77	97
+node	6	86	97
+node	7	95	96
+node	8	8	91
+node	9	15	91
+node	10	36	91
+node	11	41	90
+node	12	45	91
+node	13	54	92
+node	14	62	94
+node	15	71	94
+node	16	79	91
+node	17	94	87
+node	18	4	87
+node	19	10	86
+node	20	19	88
+node	21	27	84
+node	22	41	82
+node	23	48	87
+node	24	59	86
+node	25	63	85
+node	26	70	91
+node	27	71	86
+node	28	75	88
+node	29	86	85
+node	30	97	85
+node	31	6	83
+node	32	16	80
+node	33	23	81
+node	34	36	80
+node	35	43	77
+node	36	46	76
+node	37	51	82
+node	38	61	81
+node	39	65	82
+node	40	73	78
+node	41	76	80
+node	42	94	79
+node	43	2	78
+node	44	11	75
+node	45	18	74
+node	46	25	76
+node	47	30	78
+node	48	37	73
+node	49	49	73
+node	50	54	77
+node	51	63	76
+node	52	68	78
+node	53	74	73
+node	54	78	75
+node	55	86	75
+node	56	97	73
+node	57	5	73
+node	58	14	71
+node	59	16	68
+node	60	20	69
+node	61	26	68
+node	62	30	69
+node	63	38	64
+node	64	43	65
+node	65	48	66
+node	66	52	67
+node	67	57	69
+node	68	65	70
+node	69	71	71
+node	70	78	69
+node	71	85	69
+node	72	92	68
+node	73	4	68
+node	74	8	63
+node	75	12	64
+node	76	19	64
+node	77	23	60
+node	78	28	61
+node	79	31	62
+node	80	40	60
+node	81	47	58
+node	82	49	61
+node	83	56	62
+node	84	61	65
+node	85	65	66
+node	86	72	63
+node	87	79	61
+node	88	82	59
+node	89	85	63
+node	90	90	62
+node	91	97	62
+node	92	2	58
+node	93	2	54
+node	94	8	56
+node	95	11	57
+node	96	26	54
+node	97	29	55
+node	98	33	57
+node	99	37	56
+node	100	44	53
+node	101	51	57
+node	102	60	62
+node	103	66	62
+node	104	72	59
+node	105	88	57
+node	106	94	55
+node	107	98	55
+node	108	86	48
+node	109	31	47
+node	110	35	53
+node	111	38	48
+node	112	40	50
+node	113	47	50
+node	114	52	52
+node	115	60	55
+node	116	72	49
+node	117	80	45
+node	118	72	43
+node	119	96	41
+node	120	2	38
+node	121	5	37
+node	122	10	37
+node	123	22	38
+node	124	29	40
+node	125	42	46
+node	126	56	48
+node	127	65	46
+node	128	77	27
+node	129	79	42
+node	130	40	39
+node	131	44	43
+node	132	52	43
+node	133	61	38
+node	134	68	41
+node	135	82	39
+node	136	94	32
+node	137	18	32
+node	138	32	36
+node	139	40	36
+node	140	52	36
+node	141	64	36
+node	142	72	34
+node	143	79	35
+node	144	2	26
+node	145	6	26
+node	146	11	27
+node	147	14	28
+node	148	19	29
+node	149	24	30
+node	150	29	32
+node	151	31	29
+node	152	34	32
+node	153	36	28
+node	154	45	31
+node	155	47	26
+node	156	53	26
+node	157	58	26
+node	158	66	30
+node	159	67	15
+node	160	82	26
+node	161	89	27
+node	162	98	27
+node	163	10	23
+node	164	15	23
+node	165	25	21
+node	166	35	24
+node	167	43	22
+node	168	45	19
+node	169	53	21
+node	170	57	20
+node	171	87	6
+node	172	74	21
+node	173	84	16
+node	174	93	20
+node	175	97	15
+node	176	1	17
+node	177	5	18
+node	178	12	19
+node	179	21	17
+node	180	27	16
+node	181	32	18
+node	182	35	17
+node	183	40	20
+node	184	49	15
+node	185	56	10
+node	186	62	12
+node	187	71	14
+node	188	80	14
+node	189	5	9
+node	190	10	6
+node	191	15	12
+node	192	17	4
+node	193	30	11
+node	194	32	8
+node	195	36	8
+node	196	42	13
+node	197	43	8
+node	198	66	3
+node	199	81	4
+
+ferry	108	115
+ferry	115	157
+ferry	157	194
+
+subway	1	46
+subway	13	46
+subway	13	67
+subway	13	89
+subway	46	74
+subway	46	79
+subway	67	79
+subway	67	89
+subway	67	111
+subway	79	93
+subway	79	111
+subway	89	128
+subway	89	140
+subway	111	153
+subway	111	163
+subway	140	153
+subway	153	163
+subway	153	185
+subway	128	140
+subway	128	185
+
+bus	1	46
+bus	1	58
+bus	3	22
+bus	3	23
+bus	7	42
+bus	13	14
+bus	13	23
+bus	13	52
+bus	14	15
+bus	15	29
+bus	15	41
+bus	22	23
+bus	22	34
+bus	22	65
+bus	23	67
+bus	29	41
+bus	29	42
+bus	29	55
+bus	34	46
+bus	34	63
+bus	41	52
+bus	41	87
+bus	42	72
+bus	46	58
+bus	46	78
+bus 52  13
+bus	52	67
+bus	52	86
+bus	55	89
+bus	58	74
+bus	58	77
+bus	63	65
+bus	63	79
+bus	63	100
+bus	65	67
+bus	65	82
+bus	67	82
+bus	67	102
+bus	72	105
+bus	72	107
+bus	74	94
+bus	77	78
+bus	77	94
+bus	77	124
+bus	78	79
+bus	82	100
+bus	82	140
+bus	86	87
+bus	86	102
+bus	86	116
+bus	87	105
+bus	89	105
+bus	93	94
+bus	100	111
+bus	102	127
+bus	105	107
+bus	105	108
+bus	107	161
+bus	108	116
+bus	108	135
+bus	111	124
+bus	116	127
+bus	116	142
+bus	128	142
+bus	128	135
+bus	128	161
+bus	128	187
+bus	128	199
+bus	122	123
+bus	122	144
+bus	123	124
+bus	123	144
+bus	123	165
+bus	124	153
+bus	127	133
+bus	133	140
+bus	133	157
+bus	135	161
+bus	140	154
+bus	140	156
+bus	142	157
+bus	144	163
+bus	153	154
+bus	153	180
+bus	153	184
+bus	154	156
+bus	156	157
+bus	156	184
+bus	157	185
+bus	161	199
+bus	163	176
+bus	163	191
+bus	165	180
+bus	165	191
+bus	176	190
+bus	180	184
+bus	180	190
+bus	184	185
+bus	185	187
+bus	190	191
+
+taxi	1	8
+taxi	1	9
+taxi	2	10
+taxi	2	20
+taxi	3	4
+taxi	3	11
+taxi	3	12
+taxi	4	13
+taxi	5	15
+taxi	5	16
+taxi	6	7
+taxi	6	29
+taxi	7	17
+taxi	8	18
+taxi	8	19
+taxi	9	19
+taxi	9	20
+taxi	10	11
+taxi	10	21
+taxi	10	34
+taxi	11	22
+taxi	12	23
+taxi	13	14
+taxi	13	23
+taxi	13	24
+taxi	14	15
+taxi	14	25
+taxi	15	16
+taxi	15	26
+taxi	15	28
+taxi	16	28
+taxi	16	29
+taxi	17	29
+taxi	17	30
+taxi	18	31
+taxi	18	43
+taxi	19	32
+taxi	20	33
+taxi	21	33
+taxi	22	23
+taxi	22	34
+taxi	22	35
+taxi	23	37
+taxi	24	37
+taxi	24	38
+taxi	25	38
+taxi	25	39
+taxi	26	27
+taxi	26	39
+taxi	27	28
+taxi	27	40
+taxi	28	41
+taxi	29	41
+taxi	29	42
+taxi	30	42
+taxi	31	43
+taxi	31	44
+taxi	32	44
+taxi	32	45
+taxi	32	43
+taxi	33	46
+taxi	34	47
+taxi	34	48
+taxi	35	36
+taxi	35	48
+taxi	35	65
+taxi	36	37
+taxi	36	49
+taxi	37	50
+taxi	38	50
+taxi	38	51
+taxi	39	51
+taxi	39	52
+taxi	40	41
+taxi	40	52
+taxi	40	53
+taxi	41	54
+taxi	42	56
+taxi	42	72
+taxi	43	57
+taxi	44	58
+taxi	45	46
+taxi	45	58
+taxi	45	59
+taxi	45	60
+taxi	46	47
+taxi	46	61
+taxi	47	62
+taxi	48	62
+taxi	48	63
+taxi	49	50
+taxi	49	66
+taxi	50	67
+taxi	51	52
+taxi	51	67
+taxi	51	68
+taxi	52	69
+taxi	53	54
+taxi	53	69
+taxi	54	55
+taxi	54	70
+taxi	55	71
+taxi	56	91
+taxi	57	58
+taxi	57	73
+taxi	58	59
+taxi	58	74
+taxi	58	75
+taxi	59	75
+taxi	59	76
+taxi	60	61
+taxi	60	76
+taxi	61	62
+taxi	61	76
+taxi	61	78
+taxi	62	79
+taxi	63	64
+taxi	63	79
+taxi	63	80
+taxi	64	65
+taxi	64	81
+taxi	65	66
+taxi	65	82
+taxi	66	67
+taxi	66	82
+taxi	67	68
+taxi	67	84
+taxi	68	69
+taxi	68	85
+taxi	69	86
+taxi	70	71
+taxi	70	87
+taxi	71	72
+taxi	71	89
+taxi	72	90
+taxi	72	91
+taxi	73	74
+taxi	73	92
+taxi	74	75
+taxi	74	92
+taxi	75	94
+taxi	76	77
+taxi	77	78
+taxi	77	94
+taxi	77	96
+taxi	78	79
+taxi	78	97
+taxi	79	98
+taxi	80	99
+taxi	80	100
+taxi	81	82
+taxi	81	100
+taxi	82	101
+taxi	83	101
+taxi	83	102
+taxi	84	85
+taxi	85	103
+taxi	86	103
+taxi	86	104
+taxi	87	88
+taxi	88	89
+taxi	88	117
+taxi	89	105
+taxi	90	91
+taxi	90	105
+taxi	91	105
+taxi	91	107
+taxi	92	93
+taxi	93	94
+taxi	94	95
+taxi	95	122
+taxi	96	97
+taxi	96	109
+taxi	97	98
+taxi	97	109
+taxi	98	99
+taxi	98	110
+taxi	99	110
+taxi	99	112
+taxi	100	101
+taxi	100	112
+taxi	100	113
+taxi	101	114
+taxi	102	103
+taxi	102	115
+taxi	104	116
+taxi	105	106
+taxi	105	108
+taxi	106	107
+taxi	107	119
+taxi	108	117
+taxi	108	119
+taxi	109	110
+taxi	109	124
+taxi	110	111
+taxi	111	112
+taxi	111	124
+taxi	112	125
+taxi	113	114
+taxi	113	125
+taxi	114	115
+taxi	114	126
+taxi	114	131
+taxi	114	132
+taxi	115	126
+taxi	115	127
+taxi	116	117
+taxi	116	118
+taxi	116	127
+taxi	117	129
+taxi	118	129
+taxi	118	134
+taxi	118	142
+taxi	119	136
+taxi	120	121
+taxi	120	144
+taxi	121	122
+taxi	121	145
+taxi	122	123
+taxi	122	146
+taxi	123	124
+taxi	123	137
+taxi	123	148
+taxi	123	149
+taxi	124	130
+taxi	124	138
+taxi	125	131
+taxi	126	127
+taxi	126	132
+taxi	126	140
+taxi	127	133
+taxi	127	134
+taxi	128	142
+taxi	128	143
+taxi	128	160
+taxi	128	172
+taxi	128	188
+taxi	129	135
+taxi	129	142
+taxi	129	143
+taxi	130	131
+taxi	130	139
+taxi	132	140
+taxi	133	140
+taxi	133	141
+taxi	134	141
+taxi	134	142
+taxi	135	136
+taxi	135	143
+taxi	135	161
+taxi	136	162
+taxi	137	147
+taxi	138	150
+taxi	138	152
+taxi	139	140
+taxi	139	153
+taxi	139	154
+taxi	140	154
+taxi	140	156
+taxi	141	142
+taxi	141	158
+taxi	142	143
+taxi	142	158
+taxi	143	160
+taxi	144	145
+taxi	144	177
+taxi	145	146
+taxi	146	147
+taxi	146	163
+taxi	147	164
+taxi	148	149
+taxi	148	164
+taxi	149	150
+taxi	149	165
+taxi	150	151
+taxi	151	152
+taxi	151	165
+taxi	151	166
+taxi	152	153
+taxi	153	154
+taxi	153	166
+taxi	153	167
+taxi	154	155
+taxi	155	156
+taxi	155	167
+taxi	155	168
+taxi	156	157
+taxi	156	169
+taxi	157	158
+taxi	157	170
+taxi	158	159
+taxi	159	170
+taxi	159	172
+taxi	159	186
+taxi	159	198
+taxi	160	161
+taxi	160	173
+taxi	161	174
+taxi	162	175
+taxi	163	177
+taxi	164	178
+taxi	164	179
+taxi	165	179
+taxi	165	180
+taxi	166	181
+taxi	166	183
+taxi	167	168
+taxi	167	183
+taxi	168	184
+taxi	169	184
+taxi	170	185
+taxi	171	173
+taxi	171	175
+taxi	171	199
+taxi	172	187
+taxi	173	174
+taxi	173	188
+taxi	174	175
+taxi	176	177
+taxi	176	189
+taxi	178	189
+taxi	178	191
+taxi	179	191
+taxi	180	181
+taxi	180	193
+taxi	181	182
+taxi	181	193
+taxi	182	183
+taxi	182	195
+taxi	183	196
+taxi	184	185
+taxi	184	197
+taxi	185	186
+taxi	186	198
+taxi	187	198
+taxi	188	199
+taxi	189	190
+taxi	190	191
+taxi	190	192
+taxi	191	192
+taxi	192	194
+taxi	193	194
+taxi	194	195
+taxi	195	197
+taxi	196	197
+taxi	198	199
