@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Scotland Yard:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Scotland_Yard_jar</output-path>
+    <root id="archive" name="Scotland Yard.jar">
+      <element id="module-output" name="Scotland Yard" />
+    </root>
+  </artifact>
+</component>
