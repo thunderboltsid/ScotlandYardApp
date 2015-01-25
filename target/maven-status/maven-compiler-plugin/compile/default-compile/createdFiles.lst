@@ -1,8 +1,8 @@
+map.class
+player.class
+game.class
 ScotlandView.class
 mrx.class
-map.class
 controller.class
-player.class
 StatusBar.class
-game.class
 detective.class

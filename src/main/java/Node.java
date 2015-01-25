@@ -28,6 +28,6 @@ public class Node {
 
     @Override
     public String toString() {
-        return "node\t"+id+"\t"+x+"\t"+y;
+        return "node\t" + id + "\t" + x + "\t" + y;
     }
 }

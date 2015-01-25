@@ -1,10 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
+
 /**
  * Created by siddharthshukla on 03/12/14.
  */
 
-public class StatusBar extends JLabel{
+public class StatusBar extends JLabel {
 
     public StatusBar() {
         super();
@@ -12,7 +13,7 @@ public class StatusBar extends JLabel{
         setMessage("Players are on the map!");
     }
 
-    public void setMessage(String message){
+    public void setMessage(String message) {
         setText(" " + message);
     }
 

@@ -15,14 +15,14 @@ public class Connection {
     public Connection(String name, int x, int y) {
         this.mean = name;
         from = x;
-        to  = y;
+        to = y;
     }
 
-    public Connection reverted(){
+    public Connection reverted() {
         return new Connection(mean, to, from);
     }
 
-    public Connection(Connection another){
+    public Connection(Connection another) {
         this.mean = another.mean;
         this.from = another.from;
         this.to = another.to;
@@ -42,6 +42,6 @@ public class Connection {
 
     @Override
     public String toString() {
-        return from + " -"+mean+"- "+ to;
+        return from + " -" + mean + "- " + to;
     }
 }

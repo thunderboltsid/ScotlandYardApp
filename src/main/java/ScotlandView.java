@@ -5,7 +5,7 @@ import java.awt.event.*;
 /**
  * Created by siddharthshukla on 03/12/14.
  */
-public class ScotlandView extends JFrame{
+public class ScotlandView extends JFrame {
     private int X = 1200;
     private int MARGIN = 50;
     private String filename;
@@ -17,12 +17,13 @@ public class ScotlandView extends JFrame{
     private detective[] d;
     private Node[] nodes;
     private Connection[] connections;
-    public void setStatusBar(String message)throws Exception{
+
+    public void setStatusBar(String message) throws Exception {
         statusBar.setMessage(message);
         Thread.sleep(200);
     }
 
-    public void initializeMenu(final controller control){
+    public void initializeMenu(final controller control) {
 
         JMenuBar menu = new JMenuBar();
         JMenu file = new JMenu("File");
@@ -65,7 +66,7 @@ public class ScotlandView extends JFrame{
         this.setJMenuBar(menu);
     }
 
-    public void resetView(mrx x, detective[] d, map gameMap, controller control){
+    public void resetView(mrx x, detective[] d, map gameMap, controller control) {
         this.gameMap = gameMap;
         this.x = x;
         this.d = d;
@@ -73,7 +74,7 @@ public class ScotlandView extends JFrame{
 
     }
 
-    ScotlandView(mrx x, detective[] d, map gameMap, Node[] nodes, Connection[] connections, controller control){
+    ScotlandView(mrx x, detective[] d, map gameMap, Node[] nodes, Connection[] connections, controller control) {
         super("Scotland Yard");
         int panelHeight = 800;
 
@@ -81,24 +82,25 @@ public class ScotlandView extends JFrame{
         this.gameMap = gameMap;
         this.nodes = nodes;
         this.connections = connections;
-        setSize(X + MARGIN,2*X/3 + MARGIN);
+        setSize(X + MARGIN, 2 * X / 3 + MARGIN);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        jp =  new ScotlandPanel(X, (2*X)/3);
+        jp = new ScotlandPanel(X, (2 * X) / 3);
         statusBar = new StatusBar();
         add(jp);
         getContentPane().add(statusBar, BorderLayout.SOUTH);
         initializeMenu(control);
     }
 
-    class ScotlandPanel extends JPanel{
+    class ScotlandPanel extends JPanel {
         private int X;
         private int Y;
         private int RADIUS = 10;
         private Color TAXI = Color.BLUE;
-        private Color BUS  = Color.ORANGE;
+        private Color BUS = Color.ORANGE;
         private Color FERRY = Color.GREEN;
         private Color SUBWAY = Color.BLACK;
-        public ScotlandPanel(int X, int Y){
+
+        public ScotlandPanel(int X, int Y) {
             setPreferredSize(new Dimension(X + MARGIN, Y + MARGIN));
             this.Y = Y;
             this.X = X;
@@ -112,8 +114,9 @@ public class ScotlandView extends JFrame{
                 }
             });
         }
+
         @Override
-        public void paintComponent(Graphics g){
+        public void paintComponent(Graphics g) {
             super.paintComponent(g);
             try {
                 paintC(g);
@@ -122,24 +125,24 @@ public class ScotlandView extends JFrame{
             }
         }
 
-        public void paintC(Graphics g)throws Exception{
+        public void paintC(Graphics g) throws Exception {
             X = this.getWidth() - MARGIN;
             Y = this.getHeight() - MARGIN;
-            for(int i=0; i < gameMap.location.length; i++){
+            for (int i = 0; i < gameMap.location.length; i++) {
                 g.setColor(Color.black);
 
-                g.fillOval((MARGIN/2 + gameMap.location[i][1] *X)/100 - RADIUS/2, ( MARGIN/2 + gameMap.location[i][2]*Y)/(100) - RADIUS/2, RADIUS, RADIUS);
+                g.fillOval((MARGIN / 2 + gameMap.location[i][1] * X) / 100 - RADIUS / 2, (MARGIN / 2 + gameMap.location[i][2] * Y) / (100) - RADIUS / 2, RADIUS, RADIUS);
             }
 
-            for(int i=0; i<connections.length; i++){
-                drawConnection(connections[i],g);
+            for (int i = 0; i < connections.length; i++) {
+                drawConnection(connections[i], g);
             }
 
             drawMrX(g);
             drawPlayers(g);
         }
 
-        private Color getColor(Connection c){
+        private Color getColor(Connection c) {
             Color res = null;
 
             if (c.getMean().equals(Connection.BUS)) {
@@ -166,35 +169,35 @@ public class ScotlandView extends JFrame{
 
             Node from = gameMap.getNodeFromId(c.getFrom());
             Node to = gameMap.getNodeFromId(c.getTo());
-            int x1 = (MARGIN/2 + from.getX()*X)/100;
-            int y1 = ( MARGIN/2 + from.getY()*Y)/100;
+            int x1 = (MARGIN / 2 + from.getX() * X) / 100;
+            int y1 = (MARGIN / 2 + from.getY() * Y) / 100;
 
-            int x2 = (MARGIN/2 + to.getX()*X)/100;
-            int y2 = ( MARGIN/2 + to.getY()*Y)/100;
+            int x2 = (MARGIN / 2 + to.getX() * X) / 100;
+            int y2 = (MARGIN / 2 + to.getY() * Y) / 100;
 
-            g.drawLine(x1,y1,x2,y2);
+            g.drawLine(x1, y1, x2, y2);
             g.setColor(Color.BLACK);
         }
 
-        private void drawPlayers(Graphics g){
+        private void drawPlayers(Graphics g) {
             Font font = new Font("Serif", Font.PLAIN, 14);
             g.setFont(font);
-            for(int i=0; i<d.length; i++){
+            for (int i = 0; i < d.length; i++) {
                 g.setColor(Color.red);
                 int pos = d[i].getLocation();
-                int x = (MARGIN/2 + gameMap.location[pos-1][1]*X)/100;
-                int y = ( MARGIN/2 + gameMap.location[pos-1][2]*Y)/100;
-                g.drawString("Detective "+(i+1), x,y);
+                int x = (MARGIN / 2 + gameMap.location[pos - 1][1] * X) / 100;
+                int y = (MARGIN / 2 + gameMap.location[pos - 1][2] * Y) / 100;
+                g.drawString("Detective " + (i + 1), x, y);
                 g.setColor(Color.BLACK);
             }
         }
 
-        private void drawMrX(Graphics g){
+        private void drawMrX(Graphics g) {
             g.setColor(Color.BLUE);
             int pos = x.getLocation();
-            int x = (MARGIN/2 + gameMap.location[pos-1][1]*X)/100;
-            int y = ( MARGIN/2 + gameMap.location[pos-1][2]*Y)/100;
-            g.drawString("Mr X", x,y);
+            int x = (MARGIN / 2 + gameMap.location[pos - 1][1] * X) / 100;
+            int y = (MARGIN / 2 + gameMap.location[pos - 1][2] * Y) / 100;
+            g.drawString("Mr X", x, y);
             g.setColor(Color.BLACK);
         }
     }

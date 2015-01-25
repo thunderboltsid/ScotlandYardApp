@@ -19,10 +19,10 @@ public class map {
     //id node
     private Map<Integer, Node> nodes;
     //from id, connection
-    private Map<Integer,ArrayList<Connection>> connections;
+    private Map<Integer, ArrayList<Connection>> connections;
     private BufferedReader br;
 
-    map(String filename)throws FileNotFoundException{
+    map(String filename) throws FileNotFoundException {
         this.filename = filename;
         nodes = new HashMap<Integer, Node>();
         connections = new HashMap<Integer, ArrayList<Connection>>();
@@ -31,7 +31,7 @@ public class map {
         this.br = new BufferedReader(new InputStreamReader(in));
     }
 
-    void parseMap()throws FileNotFoundException{
+    void parseMap() throws FileNotFoundException {
         Scanner in = new Scanner(new FileInputStream(filename));
         try {
             while (in.hasNextLine()) {
@@ -44,11 +44,11 @@ public class map {
                     val1 = Integer.parseInt(linebreaker.nextToken());
                     val2 = Integer.parseInt(linebreaker.nextToken());
                     val3 = Integer.parseInt(linebreaker.nextToken());
-                    this.location[val1-1][0] = val1;
-                    this.location[val1-1][1] = val2;
-                    this.location[val1-1][2] = val3;
+                    this.location[val1 - 1][0] = val1;
+                    this.location[val1 - 1][1] = val2;
+                    this.location[val1 - 1][2] = val3;
                 }
-                if (line.startsWith("ferry")){
+                if (line.startsWith("ferry")) {
                     int val1, val2;
                     StringTokenizer linebreaker = new StringTokenizer(line);
                     linebreaker.nextToken();
@@ -57,7 +57,7 @@ public class map {
                     this.ferryArr[ferryCount][0] = val1;
                     this.ferryArr[ferryCount++][1] = val2;
                 }
-                if (line.startsWith("bus")){
+                if (line.startsWith("bus")) {
                     int val1, val2;
                     StringTokenizer linebreaker = new StringTokenizer(line);
                     linebreaker.nextToken();
@@ -66,7 +66,7 @@ public class map {
                     this.busArr[busCount][0] = val1;
                     this.busArr[busCount++][1] = val2;
                 }
-                if (line.startsWith("subway")){
+                if (line.startsWith("subway")) {
                     int val1, val2;
                     StringTokenizer linebreaker = new StringTokenizer(line);
                     linebreaker.nextToken();
@@ -75,7 +75,7 @@ public class map {
                     this.subwayArr[subwayCount][0] = val1;
                     this.subwayArr[subwayCount++][1] = val2;
                 }
-                if (line.startsWith("taxi")){
+                if (line.startsWith("taxi")) {
                     int val1, val2;
                     StringTokenizer linebreaker = new StringTokenizer(line);
                     linebreaker.nextToken();
@@ -93,7 +93,7 @@ public class map {
     }
 
     public void parse() throws Exception {
-        if(br == null){
+        if (br == null) {
             throw new Exception("Null map");
         }
         BufferedReader reader = br;
@@ -109,9 +109,9 @@ public class map {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (ParseException e){
+        } catch (ParseException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 if (reader != null) {
                     reader.close();
@@ -124,37 +124,37 @@ public class map {
     }
 
     private void parseLine(String text) throws ParseException {
-        if(text.length() > 0)
-            if(text.charAt(0) != '#'){
-                if(text.contains(Connection.TAXI)){
-                    Connection c = parseConnection(text,Connection.TAXI);
+        if (text.length() > 0)
+            if (text.charAt(0) != '#') {
+                if (text.contains(Connection.TAXI)) {
+                    Connection c = parseConnection(text, Connection.TAXI);
                     addConnections(c);
-                }else if(text.contains(Connection.SUBWAY)){
-                    Connection c = parseConnection(text,Connection.SUBWAY);
+                } else if (text.contains(Connection.SUBWAY)) {
+                    Connection c = parseConnection(text, Connection.SUBWAY);
                     addConnections(c);
-                }else if(text.contains(Connection.FERRY)){
-                    Connection c = parseConnection(text,Connection.FERRY);
+                } else if (text.contains(Connection.FERRY)) {
+                    Connection c = parseConnection(text, Connection.FERRY);
                     addConnections(c);
-                }else if(text.contains(Connection.BUS)){
-                    Connection c = parseConnection(text,Connection.BUS);
+                } else if (text.contains(Connection.BUS)) {
+                    Connection c = parseConnection(text, Connection.BUS);
                     addConnections(c);
-                }else if(text.contains(Node.NODE)){
+                } else if (text.contains(Node.NODE)) {
                     Node c = parseNode(text);
-                    if(c != null) nodes.put(c.getId(),c);
+                    if (c != null) nodes.put(c.getId(), c);
                 }
             }
     }
 
-    private void addConnections(Connection c){
+    private void addConnections(Connection c) {
         addConnection(c);
         addConnection(c.reverted());
     }
 
     private void addConnection(Connection c) {
-        if(nodes.containsKey(c.getFrom()) && nodes.containsKey(c.getTo())) {
-            if(connections.get(c.getFrom()) != null){
+        if (nodes.containsKey(c.getFrom()) && nodes.containsKey(c.getTo())) {
+            if (connections.get(c.getFrom()) != null) {
                 connections.get(c.getFrom()).add(c);
-            }else{
+            } else {
                 ArrayList<Connection> value = new ArrayList<Connection>();
                 value.add(c);
                 connections.put(c.getFrom(), value);
@@ -166,14 +166,14 @@ public class map {
         Pattern intsOnly = Pattern.compile("\\d+"); //yes, it is neat.
         Matcher makeMatch = intsOnly.matcher(text);
         ArrayList<String> ids = new ArrayList<String>();
-        while(makeMatch.find()) {
+        while (makeMatch.find()) {
             ids.add(makeMatch.group());
         }
-        if(ids.size() < 3){
+        if (ids.size() < 3) {
             System.out.println(ids);
             System.out.println(text);
-            throw new ParseException(text,0);
-        }else{
+            throw new ParseException(text, 0);
+        } else {
             int id = Integer.parseInt(ids.get(0));
             int from = Integer.parseInt(ids.get(1));
             int to = Integer.parseInt(ids.get(2));
@@ -186,13 +186,13 @@ public class map {
         Pattern intsOnly = Pattern.compile("\\d+"); //popo
         Matcher makeMatch = intsOnly.matcher(text);
         ArrayList<String> ids = new ArrayList<String>();
-        while(makeMatch.find()) {
+        while (makeMatch.find()) {
             ids.add(makeMatch.group());
         }
 
-        if(ids.size() <2){
-            throw new ParseException(text,0);
-        }else{
+        if (ids.size() < 2) {
+            throw new ParseException(text, 0);
+        } else {
             int from = Integer.parseInt(ids.get(0));
             int to = Integer.parseInt(ids.get(1));
             Connection c = new Connection(mean, from, to);
@@ -200,20 +200,20 @@ public class map {
         }
     }
 
-    public ArrayList<Connection> getConnections(Node n){
+    public ArrayList<Connection> getConnections(Node n) {
         return connections.get(n.getId());
     }
 
-    public Node getNodeFromId(int n){
+    public Node getNodeFromId(int n) {
         return nodes.get(n);
     }
 
-    public Connection[] getAllConnections(){
+    public Connection[] getAllConnections() {
         Collection<ArrayList<Connection>> c = connections.values();
         Set<Connection> result = new HashSet<Connection>();
 
-        for(ArrayList<Connection> it : c){
-            for(Connection el : it){
+        for (ArrayList<Connection> it : c) {
+            for (Connection el : it) {
                 result.add(el);
             }
         }
@@ -221,12 +221,12 @@ public class map {
         return result.toArray(new Connection[result.size()]);
     }
 
-    public Node[] getNodes(){
+    public Node[] getNodes() {
         Collection<Node> c = nodes.values();
         return c.toArray(new Node[c.size()]);
     }
 
-    public int[] searchFerryRoute(int loc){
+    public int[] searchFerryRoute(int loc) {
         int i;
         int j = 0;
         int arr[] = new int[10];
@@ -240,7 +240,7 @@ public class map {
         return arr;
     }
 
-    public int[] searchSubwayRoute(int loc){
+    public int[] searchSubwayRoute(int loc) {
         int i;
         int j = 0;
         int arr[] = new int[10];
@@ -255,7 +255,7 @@ public class map {
 
     }
 
-    public int[] searchBusRoute(int loc){
+    public int[] searchBusRoute(int loc) {
         int i;
         int j = 0;
         int arr[] = new int[10];
@@ -269,7 +269,7 @@ public class map {
         return arr;
     }
 
-    public int[] searchTaxiRoute(int loc){
+    public int[] searchTaxiRoute(int loc) {
         int i;
         int j = 0;
         int arr[] = new int[10];

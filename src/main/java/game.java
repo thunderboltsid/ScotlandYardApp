@@ -23,7 +23,7 @@ public class game {
     public static void main(String args[]) throws Exception {
         final String filename = "src/main/resources/london.map";
         System.out.println("Starting the game.");
-        controller control = new controller(5,21,filename);
+        controller control = new controller(5, 21, filename);
         control.gameController();
         System.out.println("Oops...Something fucked up.");
         return;

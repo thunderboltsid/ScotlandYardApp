@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Scotland Yard:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="99201c95-8260-4a34-aea3-e9400827d2a8" name="Default" comment="" />
+    <list default="true" id="99201c95-8260-4a34-aea3-e9400827d2a8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/ConnectionTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/NodeTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/ScotlandViewTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/StatusBarTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/controllerTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/detectiveTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/gameTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit-4.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mapTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/mrxTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/playerTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ScotlandView$1$1.class" afterPath="$PROJECT_DIR$/target/classes/ScotlandView$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ScotlandView$1.class" afterPath="$PROJECT_DIR$/target/classes/ScotlandView$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ScotlandView$2.class" afterPath="$PROJECT_DIR$/target/classes/ScotlandView$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ScotlandView$ScotlandPanel$1.class" afterPath="$PROJECT_DIR$/target/classes/ScotlandView$ScotlandPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ScotlandView$ScotlandPanel.class" afterPath="$PROJECT_DIR$/target/classes/ScotlandView$ScotlandPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ScotlandView.class" afterPath="$PROJECT_DIR$/target/classes/ScotlandView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/StatusBar.class" afterPath="$PROJECT_DIR$/target/classes/StatusBar.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/controller.class" afterPath="$PROJECT_DIR$/target/classes/controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/player.class" afterPath="$PROJECT_DIR$/target/classes/player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Connection.java" afterPath="$PROJECT_DIR$/src/main/java/Connection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Node.java" afterPath="$PROJECT_DIR$/src/main/java/Node.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/NodeTest.java" afterPath="$PROJECT_DIR$/src/test/java/NodeTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scotland Yard.iml" afterPath="$PROJECT_DIR$/Scotland Yard.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ScotlandView.java" afterPath="$PROJECT_DIR$/src/main/java/ScotlandView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StatusBar.java" afterPath="$PROJECT_DIR$/src/main/java/StatusBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller.java" afterPath="$PROJECT_DIR$/src/main/java/controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/detective.java" afterPath="$PROJECT_DIR$/src/main/java/detective.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game.java" afterPath="$PROJECT_DIR$/src/main/java/game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/map.java" afterPath="$PROJECT_DIR$/src/main/java/map.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mrx.java" afterPath="$PROJECT_DIR$/src/main/java/mrx.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/player.java" afterPath="$PROJECT_DIR$/src/main/java/player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Scotland Yard.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,22 +77,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="map.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.20522387" vertical-offset="0" max-vertical-offset="1380">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="method#parseMap#0;class#map#0" expanded="false" />
                 <element signature="method#parseLine#0;class#map#0" expanded="false" />
                 <element signature="method#addConnections#0;class#map#0" expanded="false" />
                 <element signature="method#addConnection#0;class#map#0" expanded="false" />
-                <element signature="e#6206#6218#0" expanded="true" />
                 <element signature="method#parseNode#0;class#map#0" expanded="false" />
                 <element signature="method#parseConnection#0;class#map#0" expanded="false" />
                 <element signature="method#getAllConnections#0;class#map#0" expanded="false" />
-                <element signature="e#8037#8049#0" expanded="true" />
                 <element signature="method#getNodes#0;class#map#0" expanded="false" />
                 <element signature="method#searchFerryRoute#0;class#map#0" expanded="false" />
                 <element signature="method#searchSubwayRoute#0;class#map#0" expanded="false" />
@@ -55,114 +110,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mrx.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mrx.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detective.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/detective.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11792453" vertical-offset="0" max-vertical-offset="1125">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="method#controller#0;class#controller#0" expanded="false" />
-                <element signature="method#update#0;class#controller#0" expanded="false" />
-                <element signature="method#update#1;class#controller#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="method#randomVal#0;class#player#0" expanded="false" />
-                <element signature="method#randomValExcept#0;class#player#0" expanded="false" />
-                <element signature="method#move#0;class#player#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScotlandView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ScotlandView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2010">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#984#1734#0" expanded="true" />
-                <element signature="e#1733#1734#0" expanded="true" />
-                <element signature="e#1804#2018#0" expanded="true" />
-                <element signature="e#2017#2018#0" expanded="true" />
-                <element signature="method#resetView#0;class#ScotlandView#0" expanded="false" />
-                <element signature="method#ScotlandPanel#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-                <element signature="e#3377#3641#0" expanded="true" />
-                <element signature="e#3640#3641#0" expanded="true" />
-                <element signature="method#getColor#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-                <element signature="method#drawConnection#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-                <element signature="method#drawPlayers#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-                <element signature="method#drawMrX#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatusBar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/StatusBar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Connection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -189,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ConnectionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/detectiveTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/controllerTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -209,7 +166,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -237,6 +194,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,24 +224,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scotland Yard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scotland Yard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maven-status" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,10 +293,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scotland Yard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scotland Yard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,7 +333,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="options.lastSelected" value="configurable.group.editor" />
@@ -381,6 +346,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="LayoutCode.rearrangeEntriesXML" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -699,12 +667,14 @@
       <workItem from="1420915546303" duration="14737000" />
       <workItem from="1421252226276" duration="29000" />
       <workItem from="1421970663010" duration="8610000" />
-      <workItem from="1421982683464" duration="695000" />
+      <workItem from="1421982683464" duration="1095000" />
+      <workItem from="1421984871537" duration="1898000" />
+      <workItem from="1422158271171" duration="104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80478000" />
+    <option name="totallyTimeSpent" value="82880000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -734,7 +704,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2557522" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2554217" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -743,7 +713,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283186" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -757,6 +726,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295053" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19951923" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -817,14 +787,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="300">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/london.map">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -832,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5235" max-vertical-offset="10410">
           <caret line="349" column="9" selection-start-line="349" selection-start-column="9" selection-end-line="349" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,15 +830,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#984#1734#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1804#2018#0" expanded="true" />
-            <element signature="e#2017#2018#0" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#resetView#0;class#ScotlandView#0" expanded="false" />
             <element signature="method#ScotlandPanel#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-            <element signature="e#3377#3641#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
             <element signature="method#getColor#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
             <element signature="method#drawConnection#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
             <element signature="method#drawPlayers#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
@@ -891,16 +846,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2010">
           <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="method#parseMap#0;class#map#0" expanded="false" />
             <element signature="method#parseLine#0;class#map#0" expanded="false" />
             <element signature="method#addConnections#0;class#map#0" expanded="false" />
             <element signature="method#addConnection#0;class#map#0" expanded="false" />
-            <element signature="e#6206#6218#0" expanded="true" />
             <element signature="method#parseNode#0;class#map#0" expanded="false" />
             <element signature="method#parseConnection#0;class#map#0" expanded="false" />
             <element signature="method#getAllConnections#0;class#map#0" expanded="false" />
-            <element signature="e#8037#8049#0" expanded="true" />
             <element signature="method#getNodes#0;class#map#0" expanded="false" />
             <element signature="method#searchFerryRoute#0;class#map#0" expanded="false" />
             <element signature="method#searchSubwayRoute#0;class#map#0" expanded="false" />
@@ -922,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6390" max-vertical-offset="10410">
           <caret line="349" column="9" selection-start-line="349" selection-start-column="9" selection-end-line="349" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,15 +910,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="210">
           <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#984#1734#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1804#2018#0" expanded="true" />
-            <element signature="e#2017#2018#0" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#resetView#0;class#ScotlandView#0" expanded="false" />
             <element signature="method#ScotlandPanel#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-            <element signature="e#3377#3641#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
             <element signature="method#getColor#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
             <element signature="method#drawConnection#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
             <element signature="method#drawPlayers#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
@@ -981,16 +926,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1875">
           <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="method#parseMap#0;class#map#0" expanded="false" />
             <element signature="method#parseLine#0;class#map#0" expanded="false" />
             <element signature="method#addConnections#0;class#map#0" expanded="false" />
             <element signature="method#addConnection#0;class#map#0" expanded="false" />
-            <element signature="e#6206#6218#0" expanded="true" />
             <element signature="method#parseNode#0;class#map#0" expanded="false" />
             <element signature="method#parseConnection#0;class#map#0" expanded="false" />
             <element signature="method#getAllConnections#0;class#map#0" expanded="false" />
-            <element signature="e#8037#8049#0" expanded="true" />
             <element signature="method#getNodes#0;class#map#0" expanded="false" />
             <element signature="method#searchFerryRoute#0;class#map#0" expanded="false" />
             <element signature="method#searchSubwayRoute#0;class#map#0" expanded="false" />
@@ -1041,15 +983,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="210">
           <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#984#1734#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1804#2018#0" expanded="true" />
-            <element signature="e#2017#2018#0" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#resetView#0;class#ScotlandView#0" expanded="false" />
             <element signature="method#ScotlandPanel#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-            <element signature="e#3377#3641#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
             <element signature="method#getColor#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
             <element signature="method#drawConnection#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
             <element signature="method#drawPlayers#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
@@ -1062,7 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10395">
           <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,16 +1006,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1875">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="method#parseMap#0;class#map#0" expanded="false" />
             <element signature="method#parseLine#0;class#map#0" expanded="false" />
             <element signature="method#addConnections#0;class#map#0" expanded="false" />
             <element signature="method#addConnection#0;class#map#0" expanded="false" />
-            <element signature="e#6206#6218#0" expanded="true" />
             <element signature="method#parseNode#0;class#map#0" expanded="false" />
             <element signature="method#parseConnection#0;class#map#0" expanded="false" />
             <element signature="method#getAllConnections#0;class#map#0" expanded="false" />
-            <element signature="e#8037#8049#0" expanded="true" />
             <element signature="method#getNodes#0;class#map#0" expanded="false" />
             <element signature="method#searchFerryRoute#0;class#map#0" expanded="false" />
             <element signature="method#searchSubwayRoute#0;class#map#0" expanded="false" />
@@ -1123,7 +1055,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="10395">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,7 +1062,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="10395">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5235" max-vertical-offset="10410">
           <caret line="349" column="9" selection-start-line="349" selection-start-column="9" selection-end-line="349" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1157,14 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11792453" vertical-offset="0" max-vertical-offset="636">
           <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23584905" vertical-offset="0" max-vertical-offset="636">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1176,45 +1097,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/NodeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mapTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.047169812" vertical-offset="0" max-vertical-offset="636">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="method#parseMap#0;class#map#0" expanded="false" />
-            <element signature="method#parseLine#0;class#map#0" expanded="false" />
-            <element signature="method#addConnections#0;class#map#0" expanded="false" />
-            <element signature="method#addConnection#0;class#map#0" expanded="false" />
-            <element signature="e#6206#6218#0" expanded="true" />
-            <element signature="method#parseNode#0;class#map#0" expanded="false" />
-            <element signature="method#parseConnection#0;class#map#0" expanded="false" />
-            <element signature="method#getAllConnections#0;class#map#0" expanded="false" />
-            <element signature="e#8037#8049#0" expanded="true" />
-            <element signature="method#getNodes#0;class#map#0" expanded="false" />
-            <element signature="method#searchFerryRoute#0;class#map#0" expanded="false" />
-            <element signature="method#searchSubwayRoute#0;class#map#0" expanded="false" />
-            <element signature="method#searchBusRoute#0;class#map#0" expanded="false" />
-            <element signature="method#searchTaxiRoute#0;class#map#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,18 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#randomVal#0;class#player#0" expanded="false" />
-            <element signature="method#randomValExcept#0;class#player#0" expanded="false" />
-            <element signature="method#move#0;class#player#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ScotlandViewTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.047169812" vertical-offset="0" max-vertical-offset="636">
@@ -1278,40 +1153,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ScotlandView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2010">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#984#1734#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1804#2018#0" expanded="true" />
-            <element signature="e#2017#2018#0" expanded="true" />
-            <element signature="method#resetView#0;class#ScotlandView#0" expanded="false" />
-            <element signature="method#ScotlandPanel#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-            <element signature="e#3377#3641#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
-            <element signature="method#getColor#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-            <element signature="method#drawConnection#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-            <element signature="method#drawPlayers#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-            <element signature="method#drawMrX#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StatusBarTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.047169812" vertical-offset="0" max-vertical-offset="636">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StatusBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="636">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1324,22 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/detectiveTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047169812" vertical-offset="0" max-vertical-offset="636">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/detective.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -1348,22 +1177,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/controllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047169812" vertical-offset="0" max-vertical-offset="636">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11792453" vertical-offset="0" max-vertical-offset="1125">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1125">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="method#controller#0;class#controller#0" expanded="false" />
             <element signature="method#update#0;class#controller#0" expanded="false" />
             <element signature="method#update#1;class#controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#randomVal#0;class#player#0" expanded="false" />
+            <element signature="method#randomValExcept#0;class#player#0" expanded="false" />
+            <element signature="method#move#0;class#player#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ScotlandView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2010">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#resetView#0;class#ScotlandView#0" expanded="false" />
+            <element signature="method#ScotlandPanel#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
+            <element signature="method#getColor#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
+            <element signature="method#drawConnection#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
+            <element signature="method#drawPlayers#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
+            <element signature="method#drawMrX#0;class#ScotlandPanel#0;class#ScotlandView#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StatusBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="636">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/NodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18421052" vertical-offset="0" max-vertical-offset="570">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/controllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/detectiveTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05263158" vertical-offset="0" max-vertical-offset="570">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.076271184" vertical-offset="0" max-vertical-offset="590">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20522387" vertical-offset="0" max-vertical-offset="1380">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="method#parseMap#0;class#map#0" expanded="false" />
+            <element signature="method#parseLine#0;class#map#0" expanded="false" />
+            <element signature="method#addConnections#0;class#map#0" expanded="false" />
+            <element signature="method#addConnection#0;class#map#0" expanded="false" />
+            <element signature="method#parseNode#0;class#map#0" expanded="false" />
+            <element signature="method#parseConnection#0;class#map#0" expanded="false" />
+            <element signature="method#getAllConnections#0;class#map#0" expanded="false" />
+            <element signature="method#getNodes#0;class#map#0" expanded="false" />
+            <element signature="method#searchFerryRoute#0;class#map#0" expanded="false" />
+            <element signature="method#searchSubwayRoute#0;class#map#0" expanded="false" />
+            <element signature="method#searchBusRoute#0;class#map#0" expanded="false" />
+            <element signature="method#searchTaxiRoute#0;class#map#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1374,10 +1301,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Scotland Yard:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1433,6 +1362,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
