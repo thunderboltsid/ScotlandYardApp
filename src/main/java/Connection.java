@@ -1,7 +1,7 @@
 /**
- * Created by siddharthshukla on 23/01/15.
+ * Created by siddharthshukla on 03/12/14.
  */
-public class Connection {
+public class connection {
     private String mean;
     private int from;
     private int to;
@@ -12,20 +12,14 @@ public class Connection {
     public static final String SUBWAY = "subway";
 
 
-    public Connection(String name, int x, int y) {
+    public connection(String name, int x, int y) {
         this.mean = name;
         from = x;
         to = y;
     }
 
-    public Connection reverted() {
-        return new Connection(mean, to, from);
-    }
-
-    public Connection(Connection another) {
-        this.mean = another.mean;
-        this.from = another.from;
-        this.to = another.to;
+    public connection reverted() {
+        return new connection(mean, to, from);
     }
 
     public String getMean() {

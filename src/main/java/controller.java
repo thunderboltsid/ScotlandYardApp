@@ -9,7 +9,8 @@ public class controller {
     int NoOfMoves;
     private mrx x;
     private detective[] d;
-    private ScotlandView view;
+    private scotlandview view;
+    public boolean game_state ;
 
     public int getNoOfDetectives() {
         return this.NoOfDetectives;
@@ -29,44 +30,24 @@ public class controller {
         this.filename = filename;
     }
 
-    public void update(detective d) {
-        view.repaint();
-
-        if (d.getLocation() == x.getLocation()) {
-            exit(666);
-        }
-
-    }
-
-    public void update() {
-        view.repaint();
-
-        for (int i = 0; i < getNoOfDetectives(); i++) {
-            detective[] d = this.d;
-            if (d[i].getLocation() == x.getLocation()) {
-                exit(555);
-            }
-        }
-    }
-
-
     public void gameController() throws Exception {//n is the number of detectives
         map gameMap = new map(getFilename());
         mrx x = new mrx();
         gameMap.parse();
-        Node[] nodes = gameMap.getNodes();
+        node[] nodes = gameMap.getnodes();
         d = new detective[getNoOfDetectives()];
         for (int i = 0; i < getNoOfDetectives(); i++) {
             d[i] = new detective(x.getLocation());// to make sure Mr.X and detectives don't land on the same spot.
         }
-        ScotlandView view = new ScotlandView(x, d, gameMap, nodes, gameMap.getAllConnections(), this);
+        scotlandview view = new scotlandview(x, d, gameMap, nodes, gameMap.getAllconnections(), this);
         if (view != null) {
             view.resetView(x, d, gameMap, this);
             view.setVisible(true);
         } else {
-            view = new ScotlandView(x, d, gameMap, nodes, gameMap.getAllConnections(), this);
+            view = new scotlandview(x, d, gameMap, nodes, gameMap.getAllconnections(), this);
             view.setVisible(true);
         }
+        game_state = true;
         System.out.println("Begin Game : Mr. X and " + getNoOfDetectives() + " detectives.");
         for (int i = 0; i <= getNoOfMoves(); i++) {
             System.out.println("Turn Nr: " + (i + 1));
@@ -76,22 +57,26 @@ public class controller {
                 }
             }
             System.out.print("Move for Mr.X : ");
-            view.setStatusBar("Mrx moves!");
+            view.setstatusbar("Mrx moves!");
             x.move();
             view.repaint();
             for (int j = 0; j < getNoOfDetectives(); j++) {
                 System.out.print("Move for Detective " + (j + 1) + " : ");
-                view.setStatusBar("Detective " + (j + 1) + " moves!");
+                view.setstatusbar("Detective " + (j + 1) + " moves!");
                 d[j].move();
                 view.repaint();
                 if (x.getLocation() == d[j].getLocation()) {//loop to check for collisions during the turns of detectives
-                    view.setStatusBar("MrX captured! by detective " + (j + 1));
+                    view.setstatusbar("MrX captured! by detective " + (j + 1));
+                    game_state = false;
                     game.gameOver(x, j + 1);//Game over
                 }
             }
         }
-        view.setStatusBar("MrX wins!");
+        view.setstatusbar("MrX wins!");
         game.gameOver(x, 0);
         exit(0);
+    }
+    public boolean gameEnds(){
+        return game_state;
     }
 }

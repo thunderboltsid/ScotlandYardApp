@@ -12,9 +12,9 @@ class player {
 
     public player() {
         this.location = 1;
-        this.subwayToken = 4;
-        this.taxiToken = 10;
-        this.busToken = 8;
+        setSubwayToken(4);
+        setTaxiToken(10);
+        setBusToken(8);
     }
 
     public int getLocation() {
@@ -61,11 +61,6 @@ class player {
         this.blackToken = tok;
     }
 
-    public boolean hasBlackToken() {
-        if (this.getBlackToken() != 0) return true;
-        else return false;
-    }
-
     public static int randomVal(int n) {//Generates random number between 1 and n
         int randVal;
         Random randomGenerator = new Random();
@@ -80,10 +75,6 @@ class player {
         while (randomVal == n || randomVal == 0)
             randomVal = 1 + randomGenerator.nextInt(m);
         return randomVal;
-    }
-
-    public boolean isValidMove(int loc) {
-        return true;
     }
 
     public void move() throws Exception {

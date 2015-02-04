@@ -5,20 +5,20 @@ import java.awt.event.*;
 /**
  * Created by siddharthshukla on 03/12/14.
  */
-public class ScotlandView extends JFrame {
-    private int X = 1200;
-    private int MARGIN = 50;
+public class scotlandview extends JFrame {
+    private int X = 13680;
+    private int MARGIN = 40;
     private String filename;
     map gameMap;
     private JPanel jp;
     private JFrame jf;
-    private StatusBar statusBar;
+    private statusbar statusBar;
     private mrx x;
     private detective[] d;
-    private Node[] nodes;
-    private Connection[] connections;
+    private node[] nodes;
+    private connection[] connections;
 
-    public void setStatusBar(String message) throws Exception {
+    public void setstatusbar(String message) throws Exception {
         statusBar.setMessage(message);
         Thread.sleep(200);
     }
@@ -45,7 +45,7 @@ public class ScotlandView extends JFrame {
                         } catch (Exception e1) {
                             e1.printStackTrace();
                             try {
-                                setStatusBar("Error, couldn't start the game!");
+                                setstatusbar("Error, couldn't start the game!");
                             } catch (Exception e2) {
                                 e2.printStackTrace();
                             }
@@ -74,18 +74,15 @@ public class ScotlandView extends JFrame {
 
     }
 
-    ScotlandView(mrx x, detective[] d, map gameMap, Node[] nodes, Connection[] connections, controller control) {
-        super("Scotland Yard");
-        int panelHeight = 800;
-
-        int panelWidth = 600;
+    scotlandview(mrx x, detective[] d, map gameMap, node[] nodes, connection[] connections, controller control) {
+        super("Scotland Yard Sim");
         this.gameMap = gameMap;
         this.nodes = nodes;
         this.connections = connections;
         setSize(X + MARGIN, 2 * X / 3 + MARGIN);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         jp = new ScotlandPanel(X, (2 * X) / 3);
-        statusBar = new StatusBar();
+        statusBar = new statusbar();
         add(jp);
         getContentPane().add(statusBar, BorderLayout.SOUTH);
         initializeMenu(control);
@@ -95,10 +92,10 @@ public class ScotlandView extends JFrame {
         private int X;
         private int Y;
         private int RADIUS = 10;
-        private Color TAXI = Color.BLUE;
-        private Color BUS = Color.ORANGE;
-        private Color FERRY = Color.GREEN;
-        private Color SUBWAY = Color.BLACK;
+        private Color TAXI = Color.BLACK;
+        private Color BUS = Color.RED;
+        private Color FERRY = Color.BLUE;
+        private Color SUBWAY = Color.GRAY;
 
         public ScotlandPanel(int X, int Y) {
             setPreferredSize(new Dimension(X + MARGIN, Y + MARGIN));
@@ -130,31 +127,28 @@ public class ScotlandView extends JFrame {
             Y = this.getHeight() - MARGIN;
             for (int i = 0; i < gameMap.location.length; i++) {
                 g.setColor(Color.black);
-
                 g.fillOval((MARGIN / 2 + gameMap.location[i][1] * X) / 100 - RADIUS / 2, (MARGIN / 2 + gameMap.location[i][2] * Y) / (100) - RADIUS / 2, RADIUS, RADIUS);
             }
-
             for (int i = 0; i < connections.length; i++) {
-                drawConnection(connections[i], g);
+                drawconnection(connections[i], g);
             }
-
             drawMrX(g);
             drawPlayers(g);
         }
 
-        private Color getColor(Connection c) {
+        private Color getColor(connection c) {
             Color res = null;
 
-            if (c.getMean().equals(Connection.BUS)) {
+            if (c.getMean().equals(connection.BUS)) {
                 res = BUS;
 
-            } else if (c.getMean().equals(Connection.TAXI)) {
+            } else if (c.getMean().equals(connection.TAXI)) {
                 res = TAXI;
 
-            } else if (c.getMean().equals(Connection.FERRY)) {
+            } else if (c.getMean().equals(connection.FERRY)) {
                 res = FERRY;
 
-            } else if (c.getMean().equals(Connection.SUBWAY)) {
+            } else if (c.getMean().equals(connection.SUBWAY)) {
                 res = SUBWAY;
 
             }
@@ -163,27 +157,23 @@ public class ScotlandView extends JFrame {
 
         }
 
-        private void drawConnection(Connection c, Graphics g) {
-
+        private void drawconnection(connection c, Graphics g) {
             g.setColor(getColor(c));
-
-            Node from = gameMap.getNodeFromId(c.getFrom());
-            Node to = gameMap.getNodeFromId(c.getTo());
+            node from = gameMap.getnodeFromId(c.getFrom());
+            node to = gameMap.getnodeFromId(c.getTo());
             int x1 = (MARGIN / 2 + from.getX() * X) / 100;
             int y1 = (MARGIN / 2 + from.getY() * Y) / 100;
-
             int x2 = (MARGIN / 2 + to.getX() * X) / 100;
             int y2 = (MARGIN / 2 + to.getY() * Y) / 100;
-
             g.drawLine(x1, y1, x2, y2);
             g.setColor(Color.BLACK);
         }
 
         private void drawPlayers(Graphics g) {
-            Font font = new Font("Serif", Font.PLAIN, 14);
+            Font font = new Font("Comic Sans MS", Font.BOLD, 14);
             g.setFont(font);
             for (int i = 0; i < d.length; i++) {
-                g.setColor(Color.red);
+                g.setColor(Color.BLUE);
                 int pos = d[i].getLocation();
                 int x = (MARGIN / 2 + gameMap.location[pos - 1][1] * X) / 100;
                 int y = (MARGIN / 2 + gameMap.location[pos - 1][2] * Y) / 100;
@@ -193,7 +183,9 @@ public class ScotlandView extends JFrame {
         }
 
         private void drawMrX(Graphics g) {
-            g.setColor(Color.BLUE);
+            Font font = new Font("Comic Sans MS", Font.BOLD, 14);
+            g.setFont(font);
+            g.setColor(Color.RED);
             int pos = x.getLocation();
             int x = (MARGIN / 2 + gameMap.location[pos - 1][1] * X) / 100;
             int y = (MARGIN / 2 + gameMap.location[pos - 1][2] * Y) / 100;

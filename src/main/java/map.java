@@ -17,15 +17,15 @@ public class map {
     int subwayArr[][] = new int[50][2];
     int ferryCount = 0, busCount = 0, taxiCount = 0, subwayCount = 0;
     //id node
-    private Map<Integer, Node> nodes;
+    private Map<Integer, node> nodes;
     //from id, connection
-    private Map<Integer, ArrayList<Connection>> connections;
+    private Map<Integer, ArrayList<connection>> connections;
     private BufferedReader br;
 
     map(String filename) throws FileNotFoundException {
         this.filename = filename;
-        nodes = new HashMap<Integer, Node>();
-        connections = new HashMap<Integer, ArrayList<Connection>>();
+        nodes = new HashMap<Integer, node>();
+        connections = new HashMap<Integer, ArrayList<connection>>();
         parseMap();
         InputStream in = getClass().getResourceAsStream("london.map");
         this.br = new BufferedReader(new InputStreamReader(in));
@@ -94,7 +94,7 @@ public class map {
 
     public void parse() throws Exception {
         if (br == null) {
-            throw new Exception("Null map");
+            throw new Exception("Map not found!");
         }
         BufferedReader reader = br;
 
@@ -126,43 +126,43 @@ public class map {
     private void parseLine(String text) throws ParseException {
         if (text.length() > 0)
             if (text.charAt(0) != '#') {
-                if (text.contains(Connection.TAXI)) {
-                    Connection c = parseConnection(text, Connection.TAXI);
-                    addConnections(c);
-                } else if (text.contains(Connection.SUBWAY)) {
-                    Connection c = parseConnection(text, Connection.SUBWAY);
-                    addConnections(c);
-                } else if (text.contains(Connection.FERRY)) {
-                    Connection c = parseConnection(text, Connection.FERRY);
-                    addConnections(c);
-                } else if (text.contains(Connection.BUS)) {
-                    Connection c = parseConnection(text, Connection.BUS);
-                    addConnections(c);
-                } else if (text.contains(Node.NODE)) {
-                    Node c = parseNode(text);
+                if (text.contains(connection.TAXI)) {
+                    connection c = parseconnection(text, connection.TAXI);
+                    addconnections(c);
+                } else if (text.contains(connection.SUBWAY)) {
+                    connection c = parseconnection(text, connection.SUBWAY);
+                    addconnections(c);
+                } else if (text.contains(connection.FERRY)) {
+                    connection c = parseconnection(text, connection.FERRY);
+                    addconnections(c);
+                } else if (text.contains(connection.BUS)) {
+                    connection c = parseconnection(text, connection.BUS);
+                    addconnections(c);
+                } else if (text.contains(node.NODE)) {
+                    node c = parsenode(text);
                     if (c != null) nodes.put(c.getId(), c);
                 }
             }
     }
 
-    private void addConnections(Connection c) {
-        addConnection(c);
-        addConnection(c.reverted());
+    private void addconnections(connection c) {
+        addconnection(c);
+        addconnection(c.reverted());
     }
 
-    private void addConnection(Connection c) {
+    private void addconnection(connection c) {
         if (nodes.containsKey(c.getFrom()) && nodes.containsKey(c.getTo())) {
             if (connections.get(c.getFrom()) != null) {
                 connections.get(c.getFrom()).add(c);
             } else {
-                ArrayList<Connection> value = new ArrayList<Connection>();
+                ArrayList<connection> value = new ArrayList<connection>();
                 value.add(c);
                 connections.put(c.getFrom(), value);
             }
         }
     }
 
-    private Node parseNode(String text) throws ParseException {
+    private node parsenode(String text) throws ParseException {
         Pattern intsOnly = Pattern.compile("\\d+"); //yes, it is neat.
         Matcher makeMatch = intsOnly.matcher(text);
         ArrayList<String> ids = new ArrayList<String>();
@@ -177,12 +177,12 @@ public class map {
             int id = Integer.parseInt(ids.get(0));
             int from = Integer.parseInt(ids.get(1));
             int to = Integer.parseInt(ids.get(2));
-            Node c = new Node(id, from, to);
+            node c = new node(id, from, to);
             return c;
         }
     }
 
-    private Connection parseConnection(String text, String mean) throws ParseException {
+    private connection parseconnection(String text, String mean) throws ParseException {
         Pattern intsOnly = Pattern.compile("\\d+"); //popo
         Matcher makeMatch = intsOnly.matcher(text);
         ArrayList<String> ids = new ArrayList<String>();
@@ -195,35 +195,31 @@ public class map {
         } else {
             int from = Integer.parseInt(ids.get(0));
             int to = Integer.parseInt(ids.get(1));
-            Connection c = new Connection(mean, from, to);
+            connection c = new connection(mean, from, to);
             return c;
         }
     }
 
-    public ArrayList<Connection> getConnections(Node n) {
-        return connections.get(n.getId());
-    }
-
-    public Node getNodeFromId(int n) {
+    public node getnodeFromId(int n) {
         return nodes.get(n);
     }
 
-    public Connection[] getAllConnections() {
-        Collection<ArrayList<Connection>> c = connections.values();
-        Set<Connection> result = new HashSet<Connection>();
+    public connection[] getAllconnections() {
+        Collection<ArrayList<connection>> c = connections.values();
+        Set<connection> result = new HashSet<connection>();
 
-        for (ArrayList<Connection> it : c) {
-            for (Connection el : it) {
+        for (ArrayList<connection> it : c) {
+            for (connection el : it) {
                 result.add(el);
             }
         }
 
-        return result.toArray(new Connection[result.size()]);
+        return result.toArray(new connection[result.size()]);
     }
 
-    public Node[] getNodes() {
-        Collection<Node> c = nodes.values();
-        return c.toArray(new Node[c.size()]);
+    public node[] getnodes() {
+        Collection<node> c = nodes.values();
+        return c.toArray(new node[c.size()]);
     }
 
     public int[] searchFerryRoute(int loc) {

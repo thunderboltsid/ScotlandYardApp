@@ -1,5 +1,6 @@
-import static org.junit.Assert.*;
-
-public class ScotlandViewTest {
+/**
+ * Created by siddharthshukla on 3/12/14.
+ */
+public class scotlandviewTest {
 
 }

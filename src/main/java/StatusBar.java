@@ -5,12 +5,18 @@ import java.awt.*;
  * Created by siddharthshukla on 03/12/14.
  */
 
-public class StatusBar extends JLabel {
+public class statusbar extends JLabel {
+    private String message;
 
-    public StatusBar() {
+    public statusbar() {
         super();
         super.setPreferredSize(new Dimension(100, 16));
-        setMessage("Players are on the map!");
+        message = "Players are on the map!";
+        setMessage(message);
+    }
+
+    public String getMessage(){
+        return message;
     }
 
     public void setMessage(String message) {

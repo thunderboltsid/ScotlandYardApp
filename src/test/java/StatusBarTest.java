@@ -1,5 +1,11 @@
-import static org.junit.Assert.*;
+import junit.framework.Assert;
 
-public class StatusBarTest {
+/**
+ * Created by siddharthshukla on 3/12/14.
+ */
+public class statusbarTest {
+    public void testApp(){
+        Assert.assertEquals(new statusbar().getMessage(), "Players are on the map!");
+    }
 
 }
